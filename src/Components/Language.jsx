@@ -1,7 +1,10 @@
-const Language = ({name, image, options}) => {
-    console.log(name, image, options)
+const Language = ({name, img, options}) => {
     return(
-        <div>Language</div>
+        <div className="cardWrapper">
+            <img src={img} alt="lang" />
+            <h3>{name}</h3>
+            <p>{options}</p>
+        </div>
     )
 }
 

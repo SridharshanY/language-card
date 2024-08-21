@@ -29,7 +29,6 @@ body{
   border-radius: 10px;
   color: white;
 }
-
 .langWrapper{
   width: 100%;
   display: flex;
@@ -38,4 +37,44 @@ body{
   flex-wrap: wrap;
   gap: 32px;
   margin-top: 16px;
+}
+.cardWrapper{
+  width: 150px;
+  height: 150px;
+  background-color: peachpuff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cardWrapper:hover{
+  box-shadow: 1px 3px 3px 1px;
+}
+.cardWrapper img{
+  width: 100px;
+  height: 100px;
+}
+.cardWrapper h3{
+  font-size: larger;
+}
+.cardWrapper li{
+  list-style-type: none;
+  margin-top: 2px;
+}
+.cardBottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clickBefore{
+  transform: rotateY(360deg);
+  transition: 0.8s;
+}
+.clickAfter{
+  transform: rotateY(0deg);
+  transition: 0.8s;
 }
